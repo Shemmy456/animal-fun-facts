@@ -1,0 +1,63 @@
+body {
+  background-color: #a3d9ff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  color: #ff6f61;
+  text-shadow: 0 0 10px white;
+}
+
+button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff6f61;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff9a8d;
+  box-shadow: 0 0 20px #ff9a8d;
+}
+
+#fact {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 20px;
+  width: 70%;
+  margin: 30px auto;
+  box-shadow: 0 0 10px gray;
+}
+/* Animation for the animal picture */
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#animalPic {
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px #ff6f61;
+  transition: 0.3s;
+  max-width: 300px;
+  height: auto;
+}
+
+#animalPic.animate {
+  animation: popIn 0.6s ease;
+}
